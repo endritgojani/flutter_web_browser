@@ -42,7 +42,7 @@ public class MethodCallHandlerImpl implements MethodCallHandler {
       builder.setToolbarColor(toolbarColor);
     }
     CustomTabsIntent customTabsIntent = builder.build();
-    customTabsIntent.launchUrl(activity, Uri.parse(url));
+    customTabsIntent.launchUrl(activity, Uri.parse("http://docs.google.com/gview?embedded=true&url="+url));
 
     result.success(null);
   }
